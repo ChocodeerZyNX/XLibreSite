@@ -129,8 +129,8 @@ footer {
     clear: both;
     margin: 2em 0 1em;
 }
-    footer,table,th,td {
-        margin: 0;
+    table {
+        margin: 0 auto;
         text-align: center;
         font-size: 0.85em;
     }
