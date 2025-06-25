@@ -1,81 +1,86 @@
-<!DOCTYPE <html>
-<head>
-   <meta charset="utf8">
-   <link rel="stylesheet" type="text/css" href="//chocodeerzynx.github.io/XLibreWeb/style/style.css">
-</head>
-<body>
-   <div id="header">
-      <a href="//chocodeerzynx.github.io/XLibreWeb">
-         <img src="x11.svg" alt="logo" width="25" height="25"/>
-      </a>
-   </div>
-   <div id="menu">
-      <a href="//X11Libre/xserver/">Home</a>
-      <span class="right">
-         <a href="downloads.html">download</a>
-         <a href="//github.com/X11Libre/xserver">source</a>
-      </span>
-   </div>
-   <h1>XLibre Xserver</h1>
-   <p>Xlibre is a fork of the <a href="https://gitlab.freedesktop.org/xorg/xserver">Xorg Xserver</a>
-      with lots of code cleanups and enhanced functionality.</p>
-   <p>This fork was necessary since toxic elements within Xorg projects, moles
-      from BigTech, are boycotting any substantial work on Xorg, in order to
-      destroy the project, to eliminate competition of their own products.
-      Classic "embrace, extend, extinguish" tactics.</p>
-   <p>Right after journalists first began covering the planned fork Xlibre,
-      on June 6th 2025, Redhat employees started a purge on the Xlibre founder's
-      GitLab account on freedesktop.org: deleted the git repo, tickets, merge
-      requests, etc, and so fired the shot that the whole world heard.</p>
-   <p>This is an independent project, not at all affiliated with BigTech or any
-      of their subsidiaries or tax evasion tools, nor any political activists
-      groups, state actors, etc. It's explicitly free of any "DEI" or similar
-      discriminatory policies. Anybody who's treating others nicely is welcomed.</p>
-   <p>It doesn't matter which country you're coming from, your political views,
-      your race, your sex, your age, your food menu, whether you wear boots or
-      heels, whether you're furry or fairy, Conan or McKay, comic character, a
-      small furry creature from Alpha Centauri, or just a boring average person.
-      Anybody who's interested in bringing X forward is welcome.</p>
-   <p>Together we'll make X great again!</p>
-   <h2>Upgrade notice</h2>
-   <ul>
-      <li><p>Module ABIs have changed - drivers MUST be recompiled against this Xserver
-         version, otherwise the Xserver can crash or fail to start up correctly.</p>
-      </li>
-      <li><p>If your console is locked up (no input possible, not even VT switch), then
-         most likely the input driver couldn't be loaded due to a version mismatch.
-         When unsure, it's best to be prepared to ssh into your machine from another one
-         or set a timer that's calling <code>chvt 1</code> after certain time, so you don't
-         need a cold reboot.
-         Or, make sure that you have magic <code>SysRq</code> key enabled (<code>Alt+PrtSc</code>)
-         via sysctl (<code>kernel.sysrq=1</code>), then press following combination depending on keyboard
-         layout to make kernel regain control over keyboard to make VT switching work:</p>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf8">
+      <link rel="stylesheet" type="text/css" href="//chocodeerzynx.github.io/XLibreWeb/style/style.css">
+   </head>
 
-         <ul>
-            <li>QWERTY/AZERTY keyboard layout: <code>SysRq + R</code></li>
-            <li>Dvorak/Colemak keyboard layout: <code>SysRq + P</code></li>
-         </ul>
-      </li>
-      <li><p>Proprietary Nvidia drivers might break: they still haven't managed to do
-         even simple cleanups to catch up with Xorg master for about a year.
-         All attempts to get into direct mail contact have failed. We're trying to
-         work around this, but cannot give any guarantees. But you can make it work
-         by adding <code>Option &quot;IgnoreABI&quot; &quot;1&quot;</code> line to <code>ServerFlags</code> section in Xorg config.</p>
-      </li>
-      <li><p>Most Xorg drivers should run as-is (once recompiled!), with some exceptions.
-         See <code>.gitlab-ci.yml</code> for the versions/branches built along with Xlibre.</p>
-      </li>
-   </ul>
-</body>
-<footer>
-   <h2>Contact</h2>
-   <table>
-      <tr><th></th><th></th></tr>
-      <tr><td>Mailing list:                     </td><td><a href="https://www.freelists.org/list/xlibre">https://www.freelists.org/list/xlibre</a> </td></tr>
-      <tr><td>Telegram channel:                 </td><td><a href="https://t.me/x11dev">https://t.me/x11dev</a> </td></tr>
-      <tr><td>Matrix room (mirror of tg group): </td><td><a href="https://matrix.to/#/%23xlibre:matrix.org">https://matrix.to/#/#xlibre:matrix.org</a> </td></tr>
-   </table>
-</footer>
+   <body>
+      <div id="header">
+         <a href="//chocodeerzynx.github.io/XLibreWeb">
+            <img src="x11.svg" alt="logo" width="25" height="25"/>
+         </a>
 
+         <a href="//chocodeerzynx.github.io/XLibreWeb">
+            <h1>XLibre Xserver</h1>
+         </a>
+
+      </div>
+      <div id="menu">
+         <a href="//X11Libre/xserver/">Home</a>
+         <span class="right">
+            <a href="downloads.html">Download</a>
+            <a href="//github.com/X11Libre/xserver">Source</a>
+         </span>
+      </div>
+      <p>Xlibre is a fork of the <a href="https://gitlab.freedesktop.org/xorg/xserver">Xorg Xserver</a>
+         with lots of code cleanups and enhanced functionality.</p>
+      <p>This fork was necessary since toxic elements within Xorg projects, moles
+         from BigTech, are boycotting any substantial work on Xorg, in order to
+         destroy the project, to eliminate competition of their own products.
+         Classic "embrace, extend, extinguish" tactics.</p>
+      <p>Right after journalists first began covering the planned fork Xlibre,
+         on June 6th 2025, Redhat employees started a purge on the Xlibre founder's
+         GitLab account on freedesktop.org: deleted the git repo, tickets, merge
+         requests, etc, and so fired the shot that the whole world heard.</p>
+      <p>This is an independent project, not at all affiliated with BigTech or any
+         of their subsidiaries or tax evasion tools, nor any political activists
+         groups, state actors, etc. It's explicitly free of any "DEI" or similar
+         discriminatory policies. Anybody who's treating others nicely is welcomed.</p>
+      <p>It doesn't matter which country you're coming from, your political views,
+         your race, your sex, your age, your food menu, whether you wear boots or
+         heels, whether you're furry or fairy, Conan or McKay, comic character, a
+         small furry creature from Alpha Centauri, or just a boring average person.
+         Anybody who's interested in bringing X forward is welcome.</p>
+      <p>Together we'll make X great again!</p>
+      
+      <h2>Upgrade notice</h2>
+      <ul>
+         <li><p>Module ABIs have changed - drivers MUST be recompiled against this Xserver
+            version, otherwise the Xserver can crash or fail to start up correctly.</p>
+         </li>
+         <li><p>If your console is locked up (no input possible, not even VT switch), then
+            most likely the input driver couldn't be loaded due to a version mismatch.
+            When unsure, it's best to be prepared to ssh into your machine from another one
+            or set a timer that's calling <code>chvt 1</code> after certain time, so you don't
+            need a cold reboot.
+            Or, make sure that you have magic <code>SysRq</code> key enabled (<code>Alt+PrtSc</code>)
+            via sysctl (<code>kernel.sysrq=1</code>), then press following combination depending on keyboard
+            layout to make kernel regain control over keyboard to make VT switching work:</p>
+
+            <ul>
+               <li>QWERTY/AZERTY keyboard layout: <code>SysRq + R</code></li>
+               <li>Dvorak/Colemak keyboard layout: <code>SysRq + P</code></li>
+            </ul>
+         </li>
+         <li><p>Proprietary Nvidia drivers might break: they still haven't managed to do
+            even simple cleanups to catch up with Xorg master for about a year.
+            All attempts to get into direct mail contact have failed. We're trying to
+            work around this, but cannot give any guarantees. But you can make it work
+            by adding <code>Option &quot;IgnoreABI&quot; &quot;1&quot;</code> line to <code>ServerFlags</code> section in Xorg config.</p>
+         </li>
+         <li><p>Most Xorg drivers should run as-is (once recompiled!), with some exceptions.
+            See <a href="https://github.com/X11Libre/xserver/blob/master/.gitlab-ci.yml">.gitlab-ci.yml</a> for the versions/branches built along with Xlibre.</p>
+         </li>
+      </ul>
+   </body>
+   <footer>
+      <h2>Contact</h2>
+      <table>
+         <tr><th></th><th></th></tr>
+         <tr><td>Mailing list:                     </td><td><a href="https://www.freelists.org/list/xlibre">https://www.freelists.org/list/xlibre</a> </td></tr>
+         <tr><td>Telegram channel:                 </td><td><a href="https://t.me/x11dev">https://t.me/x11dev</a> </td></tr>
+         <tr><td>Matrix room (mirror of tg group): </td><td><a href="https://matrix.to/#/%23xlibre:matrix.org">https://matrix.to/#/#xlibre:matrix.org</a> </td></tr>
+      </table>
+   </footer>
 </html>
-
