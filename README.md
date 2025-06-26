@@ -1,7 +1,6 @@
 Website concept for X11Libre
 ============================
 
-[!NOTE]
 This is only a work in progress.
 
 Current WIP
