@@ -19,7 +19,7 @@ img {
    height: auto;
 }
 
-/* link style */
+/* link */
 a {
     text-decoration: none;
 }
@@ -61,6 +61,8 @@ a {
 	overflow: hidden;
 	background-color: #587397;
 	padding: 0.7ex;
+   position: sticky;
+   top: 0;
 }
 
 #menu a {
@@ -108,7 +110,7 @@ div.nav-border {
     border-left: 1px solid #bcd;
 }
 
-/* home: sidebar navigation */
+/* home: sidebar */
 #nav-sidebar ul {
     list-style: none;
     margin: 0.5em 0 0.5em 1em;
