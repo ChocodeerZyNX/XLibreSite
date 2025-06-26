@@ -1,3 +1,7 @@
+* {
+   box-sizing: border-box;   
+}
+
 html {
 	overflow-y: scroll;
 }
@@ -8,6 +12,11 @@ body {
 	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
+}
+
+img {
+   width: 10%;
+   height: auto;
 }
 
 /* link style */
@@ -64,10 +73,18 @@ a {
 }
 
 #intro {
-    margin: -0.5em 0 0 0;
-    font-size: 1.1em;
+   background-color: #0d1117;
+   margin: 0 0 0 0;
+   font-size: 1.0em;
+   text-align: left;
+   padding: 0.4em 1.1em 0.9em;
+}
+
+/* general layout */
+#main-content {
+    width: 97%;
+    margin: 0 auto;
     text-align: left;
-    padding: 0.7em;
 }
 
 #content-left-wrapper {
@@ -103,3 +120,29 @@ div.nav-border {
 	margin: 0;
 	padding: 0;
 }
+
+
+/* responsive */
+@media only screen and (max-width: 768px) {
+   #content-right {
+      border-top: 1px solid #bcd;
+      width: 100%;
+      margin-left: 0px;
+   }
+
+   #content-left {
+      margin: 0 0 0 0;
+   }
+
+   div.nav-border {
+      border-left: 0px;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   #header {
+      font-size: 6vw;
+   }
+
+}
+
