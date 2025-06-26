@@ -15,7 +15,7 @@ body {
 }
 
 img {
-   width: 10%;
+   width: 5%;
    height: auto;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 #header {
-	background-color: #0d1117;
+	background-color: #2e2e3b;
 	clear: both;
 	color: #555;
 	font-size: 1.78em;
