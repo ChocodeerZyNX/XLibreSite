@@ -27,14 +27,14 @@ a {
     a:link,
     a:visited,
     th a:visited {
-        color: #08c;
+        color: #78b2c3;
     }
 
     a:hover,
     a:focus,
     a:visited,
     a:visited:hover {
-        color: #08c;
+        color: #78b2c3;
         text-decoration: underline;
     }
 
@@ -156,3 +156,25 @@ code {
 
 }
 
+#driver {
+   border-collapse: collapse;
+   width: 80%;
+}
+
+th {
+   text-align: center;
+   height:45px;
+}
+
+tr:nth-child(even) {
+   background-color: #313840;
+}
+
+td {
+   height: 40px;
+   padding-left: 7px;
+}
+
+th, td {
+   border: 1px solid white;
+}
