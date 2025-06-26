@@ -127,8 +127,19 @@ code {
   font-size: 105%;
   color: #e0e6ec;
   background-color: #151b23;
-  padding: 2px;
-  word-wrap: break-word;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+pre {
+   font-family: monospace, monospace;
+   margin: 1em;
+}
+
+pre code {
+   padding:10px;
+   display: block;
+   overflow: auto;
 }
 
 
